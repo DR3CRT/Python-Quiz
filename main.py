@@ -160,6 +160,6 @@ elif score == 10:
 elif score <= 14:
     print(score, f" Wow you are good")
 else:
-    print(score, f" NERD!!!")
+    print(score, f" NERD!!!!")
 
 
