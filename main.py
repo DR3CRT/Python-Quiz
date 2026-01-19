@@ -1,7 +1,7 @@
 
-score = 0
+score = 0 # Initial score set to zero
 
-quiz = [
+quiz = [ # storing of questions, options and the correct answers
     {
         "Question": "Which of these is a Star Trek character? ",
         "Options": ["A. Marty McFly",
@@ -140,27 +140,28 @@ quiz = [
 
 
 ]
-print(f"What is your name? ")
-name = input()
+# end of questions, options and correct answers
+print(f"What is your name? ") # user prompted to input name
+name = input() # user inputs name
 for q in quiz:
-    print(q["Question"])
+    print(q["Question"]) # question is printed
     for opt in q["Options"]:
-        print(opt)
-    print(f"Choose an option, A, B, C, or D")
-    answer = input().upper()
+        print(opt) # options of answers displayed one below the other using A...(answer),B...(answer),C...(answer),D...(answer)
+    print(f"Choose an option, A, B, C, or D") # user prompted to select answer using A,B,C,D
+    answer = input().upper() # any input is converted to upper case for validation of answers
     if answer == q["Answer"]:
-        score += 1
-        print(f"Correct!")
+        score += 1 # if user answers correctly, 1 is added to the score
+        print(f"Correct!") # a positive message is displayed for correct answer
     else:
-        print(f"Incorrect!")
-print(f"Well done", name, "Your final score is")
+        print(f"Incorrect!") # a negative message is displayed for incorrect answer
+print(f"Well done", name, "Your final score is") # closing message is printed with name and 'your final score is'
 if score <= 5:
-    print(score, f" you suck")
+    print(score, f" you suck") # if score is equal to or less than 5, a message is displayed
 elif score == 10:
-    print(score, f" Not bad")
+    print(score, f" Not bad") # if score is equal to 10 a message is displayed
 elif score <= 14:
-    print(score, f" Wow you are good")
+    print(score, f" Wow you are good") # if score is equal to or less than 14, a message is displayed
 else:
-    print(score, f" NERD!!!!")
+    print(score, f" NERD!!!!") # if top score is reached a message is displayed
 
 
