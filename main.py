@@ -95,26 +95,18 @@ quiz = [
 
 
 ]
-print(f"What is your name? ")
+print("What is your name? ")
 name = input()
 for q in quiz:
-    print(q[f"Question"])
-    print(q[f"Options"])
-    print(f"Choose an option, A, B, C, or D")
+    print(q["Question"])
+    print(q["Options"])
+    print("Choose an option, A, B, C, or D")
     answer = input()
     if answer == q["Answer"]:
         score += 1
-        print(f"Correct!")
+        print("Correct!")
     else:
-        print(f"Incorrect!")
-print("Well done", name, "Your final score is")
-if score <= 5:
-        print(score , "Could be better")
-elif score == 10:
-        print(score, "You did well")
-elif score <= 14:
-        print(score, "Wow you are great")
-else:
-        print(score, "NERD!!!!")
+        print("Incorrect!")
+print("Well done", name, "Your final score is", score)
 
 
