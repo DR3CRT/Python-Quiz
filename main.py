@@ -101,7 +101,7 @@ for q in quiz:
     print(q["Question"])
     print(q["Options"])
     print(f"Choose an option, A, B, C, or D")
-    answer = input()
+    answer = input().upper()
     if answer == q["Answer"]:
         score += 1
         print(f"Correct!")
