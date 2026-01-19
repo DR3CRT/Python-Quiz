@@ -115,6 +115,6 @@ elif score == 10:
 elif score <= 14:
         print(score, "Wow you are great")
 else:
-        print(score, "NERD")
+        print(score, "NERD!!!!")
 
 
