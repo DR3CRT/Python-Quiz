@@ -109,7 +109,7 @@ for q in quiz:
         print(f"Incorrect!")
 print(f"Well done", name, "Your final score is")
 if score <= 5:
-    print(score, f" you could do better")
+    print(score, f" you suck")
 elif score == 10:
     print(score, f" Not bad")
 elif score <= 14:
