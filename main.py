@@ -1,7 +1,7 @@
 
 score = 0 # Initial score set to zero
 
-quiz = [ # storing of questions, options and the correct answers
+quiz_Questions = [ # storing of questions, options and the correct answers
     {
         "Question": "Which of these is a Star Trek character? ",
         "Options": ["A. Marty McFly",
@@ -143,13 +143,13 @@ quiz = [ # storing of questions, options and the correct answers
 # end of questions, options and correct answers
 print(f"What is your name? ") # user prompted to input name
 name = input() # user inputs name
-for q in quiz:
-    print(q["Question"]) # question is printed
-    for opt in q["Options"]:
+for questions in quiz_Questions:
+    print(questions["Question"]) # question is printed
+    for opt in questions["Options"]:
         print(opt) # options of answers displayed one below the other using A...(answer),B...(answer),C...(answer),D...(answer)
     print(f"Choose an option, A, B, C, or D") # user prompted to select answer using A,B,C,D
     answer = input().upper() # any input is converted to upper case for validation of answers
-    if answer == q["Answer"]:
+    if answer == questions["Answer"]:
         score += 1 # if user answers correctly, 1 is added to the score
         print(f"Correct!") # a positive message is displayed for correct answer
     else:
