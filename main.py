@@ -157,8 +157,8 @@ for questions in quiz_Questions:
 print(f"Well done", name, "Your final score is") # closing message is printed with name and 'your final score is'
 if score <= 5:
     print(score, f" you suck") # if score is equal to or less than 5, a message is displayed
-elif score == 10:
-    print(score, f" Not bad") # if score is equal to 10 a message is displayed
+elif score <= 10:
+    print(score, f" Not bad") # if score is less than or equal to 10 a message is displayed
 elif score <= 14:
     print(score, f" Wow you are good") # if score is equal to or less than 14, a message is displayed
 else:
